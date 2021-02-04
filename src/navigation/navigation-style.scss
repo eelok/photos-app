@@ -12,6 +12,7 @@
   &__item {
     padding: 10px 20px;
     cursor: pointer;
+    z-index: 5;
 
     &:hover {
       color: #0099e5;
@@ -35,7 +36,8 @@
 
   &__subitem {
     width: 100px;
-    padding: 10px 20px;
+    padding: 5px 20px;
+    background-color: white;
 
     &:hover{
     }

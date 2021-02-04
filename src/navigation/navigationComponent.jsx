@@ -1,11 +1,10 @@
 import React from 'react';
 import './navigation-style.scss';
 import {Link} from "react-router-dom";
-import CITY from './city';
+import {CITY as cities} from './city';
 
 
 const NavigationComponent = () => {
-    const cities = CITY;
 
     return (
 
@@ -20,7 +19,10 @@ const NavigationComponent = () => {
                         {
                             cities.map((city, index) =>
                                 <li key={index} className="navigation__item navigation__subitem">
-                                    <Link className="navigation__link navigation__sublink" >{city}</Link>
+                                    <Link
+                                        to={`/city/${city.toLowerCase()}`}
+                                        className="navigation__link navigation__sublink"
+                                    >{city}</Link>
                                 </li>
                             )
                         }
