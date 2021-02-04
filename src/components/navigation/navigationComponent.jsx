@@ -11,7 +11,7 @@ const NavigationComponent = () => {
         <nav className="navigation">
             <ul className="navigation__container">
                 <li className="navigation__item">
-                    <Link className="navigation__link" to="#">Home</Link>
+                    <Link className="navigation__link" to="/">Favorite Photos</Link>
                 </li>
                 <li className="navigation__item navigation__item-with-dropdown">
                     <Link className="navigation__link" to="#">Cities</Link>

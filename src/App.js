@@ -1,7 +1,7 @@
 import './App.scss';
 import {Route, Switch} from 'react-router-dom';
 import HomePageGallery from "./homePageGallery/homePageGallery";
-import NavigationComponent from "./navigation/navigationComponent";
+import NavigationComponent from "./components/navigation/navigationComponent";
 import CitiesPage from "./pages/citiesPage";
 
 
