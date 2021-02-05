@@ -4,7 +4,7 @@ import './list-of-images-style.scss';
 const ListOfImages = ({photos}) => {
 
     return (
-        <>
+        <div className="container">
             {
                 photos.map((photoItem, index) =>
                     <div key={index} className="gallery-item">
@@ -13,7 +13,7 @@ const ListOfImages = ({photos}) => {
                     </div>
                 )
             }
-        </>
+        </div>
     )
 
 

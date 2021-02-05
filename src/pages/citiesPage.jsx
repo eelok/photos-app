@@ -1,19 +1,16 @@
 import React from 'react';
 import {PHOTO_GALLERY as photoObjects} from './../homePageGallery/photoGallery';
+import ListOfImages from "../components/listOfImages/listOfImages";
 
 const CitiesPage = ({match}) => {
     const optedCity = match.params.city;
 
-    let imgUrls = photoObjects.filter(photoObj =>
+    let photoObj = photoObjects.filter(photoObj =>
         photoObj.tags && photoObj.tags.includes(optedCity.toLowerCase())
     );
 
     return (
-        <div>
-            {imgUrls.map(photo =>
-                <img src={photo.imageURL} alt=""/>
-            )}
-        </div>
+        <ListOfImages photos={photoObj}/>
     )
 }
 export default CitiesPage;
