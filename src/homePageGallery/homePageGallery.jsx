@@ -1,10 +1,10 @@
 import {PHOTO_GALLERY} from './photoGallery';
-import ListOfImages from "../components/listOfImages/listOfImages";
+import ListOfPhotos from "../components/listOfImages/listOfPhotos";
 
 const HomePageGallery = () => {
 
     return (
-        <ListOfImages photos={PHOTO_GALLERY}/>
+        <ListOfPhotos photos={PHOTO_GALLERY}/>
     )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import {PHOTO_GALLERY as photoObjects} from './../homePageGallery/photoGallery';
-import ListOfImages from "../components/listOfImages/listOfImages";
+import {PHOTO_GALLERY as photoObjects} from '../../homePageGallery/photoGallery';
+import ListOfPhotos from "../../components/listOfImages/listOfPhotos";
 
 const CitiesPage = ({match}) => {
     const optedCity = match.params.city;
@@ -10,7 +10,7 @@ const CitiesPage = ({match}) => {
     );
 
     return (
-        <ListOfImages photos={photoObj}/>
+        <ListOfPhotos photos={photoObj}/>
     )
 }
 export default CitiesPage;
