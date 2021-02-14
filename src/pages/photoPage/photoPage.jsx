@@ -36,38 +36,12 @@ const PhotoPage = ({match}) => {
                 <div className="products-gallery">
                     {
                         products.map((product, index) =>
-                            <img className="product-icon" src={product.icon} alt={product.title}/>
+                            <img className="product-icon" key={index} src={product.icon} alt={product.title}/>
                         )
                     }
                 </div>
             </div>
         </div>
-        // <section className="image-hero__container">
-        //     <div className="image-hero__box-image">
-        //         <img className="image-hero__image" src={photoObj.photoURL} alt={photoObj.name}/>
-        //     </div>
-        //     <div className="image-hero__box-info">
-        //         <div className="box-info__text">
-        //             <h2 className="image-hero__name">{photoObj.name}</h2>
-        //             <h4 className="image-hero__category">category: <span
-        //                 className="image-hero__category-span">{photoObj.category}</span></h4>
-        //             <div className="image-hero__tags">
-        //                 {
-        //                     photoObj.tags.map((item, index) =>
-        //                         <p className="image-hero__tag" key={index}>{item}</p>
-        //                     )}
-        //             </div>
-        //         </div>
-        //
-        //         <div className="box-info__products">
-        //             {
-        //                 products.map((product, index) =>
-        //                     <img className="box-info__product-img" key={index} src={product.icon} alt={product.title}/>
-        //                 )
-        //             }
-        //         </div>
-        //     </div>
-        // </section>
     )
 };
 

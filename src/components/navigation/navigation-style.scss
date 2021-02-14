@@ -1,5 +1,5 @@
 .navigation {
-  width: 95%;
+  width: 90%;
   height: 50px;
   margin: 0 auto;
 
@@ -17,12 +17,18 @@
 
     &:hover {
       color: #0099e5;
+
       .navigation__dropdown {
         display: flex;
         color: #0099e5;
       }
     }
+
+    &:first-child {
+      padding-left: 0;
+    }
   }
+
 
   &__link {
     text-decoration: none;
@@ -41,7 +47,7 @@
     padding: 5px 20px;
     background-color: white;
 
-    &:hover{
+    &:hover {
     }
   }
 
